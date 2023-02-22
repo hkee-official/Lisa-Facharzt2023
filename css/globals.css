@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    h1 {
+        font-size:14px!important;
+    }
+.bggr {
+    position:absolute;
+
+        inset: 0px;
+        background-image: url(/pattern.svg);
+        background-repeat: repeat;
+        background-position: right top;
+        background-size: 60px, 60px;
+        mix-blend-mode:overlay;
+        overflow: hidden;
+        position:relative;
+        right:-100px;
+
+    }
+.bggr2 {
+        position:absolute;
+        inset: 0px;
+        background-image: url(/pattern.svg);
+        background-repeat: repeat;
+        background-position: right;
+        background-size: 50px, 50px;
+        mix-blend-mode:overlay;
+    }
+.background-gradient {
+        top: 50%;
+        left: 80%;
+        width: 150vw;
+        height: 800px;
+        transform: translate3d(-40%, -30%, 0px);
+        -webkit-mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0));
+        background-image: linear-gradient(90deg,rgba(var(--rgb-blue-400),1),rgba(var(--rgb-seafoam-400),1));
+        filter: hue-rotate(0deg) invert(1);
+    }
+.background-gradient2 {
+        top: 50%;
+        left: 40%;
+        width: 100vw;
+        height: 700px;
+        transform: translate3d(-45%, -15%, 100px);
+        -webkit-mask-image: radial-gradient(farthest-side at 50% 50%, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0));
+        background-image: linear-gradient(90deg,rgba(var(--rgb-blue-400),1),rgba(var(--rgb-seafoam-400),1));
+        filter: hue-rotate(0deg) invert(1);
+    }
+}
